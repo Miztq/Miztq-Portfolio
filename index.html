@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Miztq – Video Editor</title>
+<script>document.documentElement.className='js'</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- EDIT ME: replace project titles, links and the email address below. -->
+<div class="wrap">
+  <header class="top">
+    <b>Miztq</b>
+    <nav><a href="#work">Work</a><a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a><a href="#/hire">Hire me</a></nav>
+  </header>
+
+  <div id="home">
+  <h1>I turn raw footage into stories people want to watch.</h1>
+  <p class="lede">Video editor for YouTube creators, brands, short films and AMVs. Fast turnaround, sharp motion graphics, and cuts that keep the pace.</p>
+  <a class="btn" href="#work">See my work</a><a class="btn ghost" href="#/hire">Hire me</a>
+
+  <div class="tl" id="tl" aria-hidden="true">
+    <div class="tl-top"><span>Sequence 01</span><span id="tc">00:00:00</span></div>
+    <div class="tl-body" id="tlb">
+      <div class="row"><i>V2</i><span class="clip gap" style="flex:3"></span><span class="clip d" style="flex:2">Titles</span><span class="clip gap" style="flex:3"></span><span class="clip d" style="flex:2">Lower third</span></div>
+      <div class="row"><i>V1</i><span class="clip a" style="flex:3">Cold open</span><span class="clip b" style="flex:4">Interview</span><span class="clip c" style="flex:3">B-roll</span><span class="clip a" style="flex:3">Reveal</span></div>
+      <div class="row"><i>A1</i><span class="clip c" style="flex:13">Dialogue + music mix</span></div>
+      <div class="head" id="head"></div>
+    </div>
+  </div>
+  <p class="hint">Move your cursor over the timeline to scrub.</p>
+
+  <section id="work">
+    <h2>Selected work</h2>
+    <div class="work">
+      <a href="#" class="feat"><div class="thumb t1">12:40</div><h3>Project title one</h3><p>YouTube documentary · full edit, sound and color</p></a>
+      <a href="#"><div class="thumb t2">0:45</div><h3>Project title two</h3><p>Brand ad · 3 cutdowns for social</p></a>
+      <a href="#"><div class="thumb t3">8:15</div><h3>Project title three</h3><p>Podcast episode · multicam edit</p></a>
+      <a href="#"><div class="thumb t4">0:30</div><h3>Motion graphics</h3><p>Animated titles · kinetic text and visual effects</p></a>
+      <a href="#"><div class="thumb t5">3:40</div><h3>AMV edit</h3><p>Beat-synced anime edit · transitions and effects</p></a>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2>What I do</h2>
+    <div class="cols">
+      <div><h3>Story edits</h3><p>Rough cut to final cut for long-form video, interviews and documentaries.</p></div>
+      <div><h3>Short-form</h3><p>Reels, Shorts and ads with fast hooks, captions and clean exports.</p></div>
+      <div><h3>Motion graphics</h3><p>Animated titles, kinetic text, transitions and visual effects in After Effects.</p></div>
+      <div><h3>AMV edits</h3><p>Beat-synced anime music videos with clean transitions, effects and pacing.</p></div>
+      <div><h3>Polish</h3><p>Color correction, audio cleanup, titles and final delivery.</p></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About</h2>
+    <p class="about">I'm a video editor. I started by cutting friends' projects and now work with creators and small teams. I edit in Premiere Pro, After Effects and DaVinci Resolve. Send me your footage and a few reference videos, and I'll send back a first cut quickly.</p>
+  </section>
+  </div>
+
+  <div id="hire" hidden>
+    <h1>Hire me for your next edit</h1>
+    <p class="lede">Pick a package, add what you need, and send the request. I'll confirm timing and details within a day. Work starts after a 50% deposit.</p>
+    <div class="hire-grid">
+      <div>
+        <h3 class="step">1. Choose a package</h3>
+        <div class="opts">
+          <label class="opt"><input type="radio" name="pkg" value="Short-form edit" data-price="1500" checked><span class="grow"><b>Short-form edit</b><br><small>Reel, Short or ad up to 60 seconds. 1 revision round.</small></span><span class="price">₹1,500</span></label>
+          <label class="opt"><input type="radio" name="pkg" value="Standard edit" data-price="2000" data-rate="minute"><span class="grow"><b>Standard edit</b><br><small>YouTube or interview video. Cuts, pacing, music and 2 revision rounds.</small></span><span class="price">₹2,000 / min</span></label>
+          <label class="opt"><input type="radio" name="pkg" value="Premium edit" data-price="4000" data-rate="minute"><span class="grow"><b>Premium edit</b><br><small>Color, sound cleanup and motion graphics with 3 revision rounds.</small></span><span class="price">₹4,000 / min</span></label>
+        </div>
+        <h3 class="step">2. How many videos?</h3>
+        <input type="number" id="qty" min="1" max="50" value="1" aria-label="Number of videos">
+        <div id="minutesWrap" hidden>
+          <h3 class="step">3. Finished minutes per video</h3>
+          <input type="number" id="mins" min="1" max="180" value="10" aria-label="Finished minutes per video">
+        </div>
+        <h3 class="step">4. Add-ons</h3>
+        <div class="opts">
+          <label class="opt"><input type="checkbox" name="add" value="Rush delivery" data-price="1000" data-per="order"><span class="grow"><b>Rush delivery</b><br><small>First cut within 48 hours.</small></span><span class="price">+₹1,000</span></label>
+          <label class="opt"><input type="checkbox" name="add" value="Captions" data-price="300" data-per="video"><span class="grow"><b>Captions</b><br><small>Burned-in or SRT file, per video.</small></span><span class="price">+₹300</span></label>
+          <label class="opt"><input type="checkbox" name="add" value="Extra revision round" data-price="750" data-per="order"><span class="grow"><b>Extra revision round</b><br><small>One more round of changes.</small></span><span class="price">+₹750</span></label>
+        </div>
+        <h3 class="step">5. Your details</h3>
+        <input type="text" id="nm" placeholder="Your name" aria-label="Your name">
+        <input type="email" id="em" placeholder="Email" aria-label="Email">
+        <textarea id="dt" rows="4" placeholder="Tell me about the project: footage length, style, deadline, links to references" aria-label="Project details"></textarea>
+      </div>
+      <aside class="sum">
+        <ul id="lines"></ul>
+        <div class="tot"><span>Total</span><span id="total"></span></div>
+        <p style="margin:.4rem 0 0;color:var(--mute)">Deposit due to start: <b id="dep"></b></p>
+        <a class="btn" id="pay" href="#/hire">Pay 50% deposit</a>
+        <a class="btn ghost" id="mail" href="#/hire">Email request</a>
+        <p id="note" aria-live="polite"></p>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<footer id="contact"><div class="wrap">
+  <p class="big">Have footage that needs a cut?</p>
+  <a class="btn" href="mailto:miztq69@gmail.com">miztq69@gmail.com</a><a class="btn ghost" href="#/hire">Hire me</a>
+</div></footer>
+
+<script src="script.js"></script>
+</body>
+</html>
